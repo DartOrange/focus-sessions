@@ -1,0 +1,11 @@
+[
+  "Fresh offline launch, default duration and honest empty history",
+  "Settings persist; paused session survives background and process death without counting paused time",
+  "Real one-minute UI session: start, pause, resume, background return, completion, history and relaunch",
+  "Running process death before/after deadline; logical finish persisted once across repeated launches",
+  "Duration changes leave active timer intact; mode replacement and cancellation require explicit confirmation",
+  "Clear-history cancellation and confirmation preserve the active session",
+  "Corrupt persisted timer repair retains valid history and creates no false completion",
+  "Native SQLite write failure does not acknowledge success; explicit reload restores usable commands",
+  "Small 343x610 dp screen at 150% font scale: timer controls, history and settings remain reachable"
+]

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.apk binary
+*.png binary
+*.ttf binary
+# Preserve upstream license bytes and their original whitespace.
+assets/fonts/OFL-*.txt -text -whitespace
+demo/*LICENSES.txt -text -whitespace
+demo/NDK_RUNTIME_NOTICE.txt -text -whitespace
