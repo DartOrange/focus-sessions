@@ -16,6 +16,7 @@ On an ARM64 Android phone, copy/download the APK, open it, and allow installatio
 With Android SDK tools installed, create the same AVD using the official CLI tools and `system-images;android-36;google_apis;x86_64`, then:
 
 ```powershell
+$env:ANDROID_HOME = "$env:LOCALAPPDATA/Android/Sdk" # Use your SDK path if different.
 & "$env:ANDROID_HOME/emulator/emulator.exe" -avd FocusSessions_API36
 # In another terminal, from this repository:
 & "$env:ANDROID_HOME/platform-tools/adb.exe" install -r demo/focus-sessions-1.0.0.apk
